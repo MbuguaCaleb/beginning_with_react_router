@@ -69,6 +69,27 @@ When looping through react you should always include a key ->unique identifier f
 ```
 
 ```
+Function of the exact key word in react routers which is to map to the exact match needed and not stop where there may be similar cases of the url
+
+(a)<Route path='/shop' exact component={Shop}></Route>
+
+
+(b)<Route path='/shop/:id' component={Item}></Route>
+
+
+Because of the exact it will be able to continue to route (b)
+```
+
+```
+When we Link to something we get access dynamically to a property called (match)
+
+Match has a few poperties helpful to us eg the url parameters which are very helpful to dynamic fetch of data.
+
+
+
+```
+
+```
 Notes  by MbuguaCaleb
 
 ```

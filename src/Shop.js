@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { Link } from "react-router-dom";
 
 function Shop() {
   //use Effect is used to excute fetch when the component mounts
@@ -22,7 +23,9 @@ function Shop() {
   return (
     <div>
       {items.map(item => (
-        <h1 key={item.id}>{item.name}</h1>
+        <h1 key={item.id}>
+          <Link to={`/shop/${item.id}`}>{item.name}</Link>
+        </h1>
       ))}
     </div>
   );
