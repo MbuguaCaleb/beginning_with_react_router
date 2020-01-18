@@ -42,11 +42,31 @@ React router link simulates a href in normal HTML and CSS.
   <Link to='/about'>
 <li>About</li>
 </Link>
-       
+
 
 
 ```
 
+```
+State by defacto when setting up takes two parameters.
+
+  const [items, setItems] = useState([]);
+
+(i)param 1 is the name of the state
+
+(ii)param 2 is a method which when excuted has an effect or calls the useState thus calling up the state.
+
+(iii)UseState should implify the format in which the state is being received.Like i the example above the state is of the format of an array.
+
+```
+
+```
+When looping through react you should always include a key ->unique identifier for each record.
+
+{items.map(item => (
+<h1 key={item.id}>{item.name}</h1>
+))}
+```
 
 ```
 Notes  by MbuguaCaleb
