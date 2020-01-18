@@ -35,3 +35,24 @@ overlapping once a matching pattern to the URL you are mapping to the router has
 exact key word is important so that the router does not stop at the first match
 
 ```
+
+```
+React router link simulates a href in normal HTML and CSS.
+
+  <Link to='/about'>
+<li>About</li>
+</Link>
+       
+
+
+```
+
+
+```
+Notes  by MbuguaCaleb
+
+```
+
+```
+Tutor devEd
+```
